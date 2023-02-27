@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #0070f3;
 }
 
 .title a {
@@ -88,4 +89,68 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #eaeaea;
+  width: 80vw;
+  margin: 24px auto 24px;
+  border: 3px solid #73AD21;
+}
+
+
+.col1 {
+  display: flex;
+  width: 20vw;
+  /* background-image: url(dwarf.jpg); */
+  background-color: green;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  height: 80vh;
+  margin: 24px auto 24px;
+}
+
+.col2 {
+  display: flex;
+  width: 20vw;
+  background-color: #0070f3;
+  /* background-image: url(dragon.png); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  height: 80vh;
+  opacity: 0.8;
+  margin: 24px auto 24px;
+}
+
+.col3 {
+  display: flex;
+  width: 20vw;
+  background-color: aqua;
+  /* background-image: url(sprite.png); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  height: 80vh;
+  margin: 24px auto 24px;
+
+}
+
+.heroContainer {
+  display:none;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
 }

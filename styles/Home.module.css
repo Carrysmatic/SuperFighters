@@ -3,9 +3,7 @@
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #0070f3;
+
 }
 
 .title a {
@@ -38,16 +36,6 @@
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  max-width: 800px;
-  margin-top: 3rem;
 }
 
 .card {
@@ -91,66 +79,39 @@
   }
 }
 
-.row {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #eaeaea;
-  width: 80vw;
-  margin: 24px auto 24px;
-  border: 3px solid #73AD21;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
 
-
-.col1 {
-  display: flex;
-  width: 20vw;
-  /* background-image: url(dwarf.jpg); */
-  background-color: green;
-  background-size: contain;
-  background-repeat: no-repeat;
-  /* background-position: center; */
-  height: 80vh;
-  margin: 24px auto 24px;
+.fighter {
+  
+  text-align: center;
+  height: auto;
+  box-sizing: border-box;
 }
 
-.col2 {
-  display: flex;
-  width: 20vw;
-  background-color: #0070f3;
-  /* background-image: url(dragon.png); */
-  background-size: contain;
-  background-repeat: no-repeat;
-  /* background-position: center; */
-  height: 80vh;
-  opacity: 0.8;
-  margin: 24px auto 24px;
-}
-
-.col3 {
-  display: flex;
-  width: 20vw;
-  background-color: aqua;
-  /* background-image: url(sprite.png); */
-  background-size: contain;
-  background-repeat: no-repeat;
-  /* background-position: center; */
-  height: 80vh;
-  margin: 24px auto 24px;
+.fighter img {
+  height: 100%;
+  max-width: 100%;
 
 }
 
-.heroContainer {
-  display:none;
+.button_display {
+  border: 2px solid black;
+  font-size: large;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.d-flex {
-  display: flex !important;
+.healthBar {
+  color: red;
 }
 
-.d-none {
-  display: none !important;
-}
-
-.d-block {
-  display: block !important;
+.block {
+  margin: 0 auto;
+  width: 100px;
+  height: 20px;
+  background-color: red;
 }

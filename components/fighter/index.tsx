@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { Archer, Fighter} from "../../models/Fighter";
+import { Archer, FighterShape} from "../../models/Fighter";
 import styles from "../../styles/Home.module.css";
 import { useRouter } from "next/router";
 
 interface FighterProps {
-  fighter: Fighter;
+  fighter: FighterShape;
 }
 
 export function Fighter(props: FighterProps) {

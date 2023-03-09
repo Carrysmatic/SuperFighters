@@ -33,7 +33,14 @@ export default function Fight() {
     setTick(1);
   }, [setFightInProgress, setTick])
 
-
+  const nextAttack = useMemo(() => {
+    const attackCooldown = 1 / selectedFighter.attackSpeed * 1000;
+    if (fightInProgress === false) {  
+      return 0;
+    }
+    return attackCooldown - (tick % attackCooldown);
+  }, [tick, fightInProgress]);
+  
 
   useEffect(() => {
     if (tick === 0 || fightInProgress === false) {
@@ -58,7 +65,20 @@ export default function Fight() {
     setTimeout(() => {
       setTick(tick + 1);
     }, 1000);
-  }, [tick]);
+  }, [nextAttack, tick]);
+
+ 
+
+// use atsp, once tick hits 1, enforce attackCooldown
+
+// set every fighters attackcd to 1/attackspeed * 1000 (ms) 
+// set a timer to 1/attackspeed * 1000 (ms)
+// once timer hits 0, set attackcd to 0
+// if attackcd is 0, allow attack
+// if attackcd is not 0, do not allow attack
+
+
+
 
   return (
     <div className={styles.container}>

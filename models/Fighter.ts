@@ -6,9 +6,8 @@ export interface FighterShape {
   attack: number;
   defense: number;
   attackSpeed: number;
-//   attackCooldown: number;
+  attackCooldown: number;
 }
-// create 3 fighters and show all 3 on screen / poza-> nume -> stat screen . win . 
 
 export const Archer: FighterShape = {
     name: 'Archer',
@@ -18,7 +17,7 @@ export const Archer: FighterShape = {
     attack: 12,
     defense: 5,
     attackSpeed: 1,
-    // attackCooldown: 0
+    attackCooldown: 0
 }
 
 export const Knight: FighterShape = {
@@ -29,7 +28,7 @@ export const Knight: FighterShape = {
     attack: 7,
     defense: 10,
     attackSpeed: 0.5,
-    // attackCooldown: 0
+    attackCooldown: 0
 }
 
 export const Mage: FighterShape ={
@@ -40,7 +39,7 @@ export const Mage: FighterShape ={
     attack: 15,
     defense: 3,
     attackSpeed: 1,
-    // attackCooldown: 0
+    attackCooldown: 0
 }
 
 export const fighters = [Archer, Knight, Mage];

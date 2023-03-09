@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { Archer, Knight, Mage, fighters } from "../models/Fighter";
+import { fighters } from "../models/Fighter";
 import Link from "next/link";
 import { Fighter } from "../components/fighter";
 

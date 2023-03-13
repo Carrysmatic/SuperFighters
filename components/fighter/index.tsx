@@ -23,6 +23,7 @@ export function Fighter(props: FighterProps) {
       <div>Attack {fighter.attack}</div>
       <div>Defense {fighter.defense}</div>
       <div>Speed {fighter.attackSpeed}</div>
+      <div>{fighter.attackCooldown}</div>
      
     </div>
 

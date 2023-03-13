@@ -23,12 +23,14 @@ export default function Home() {
           return (
             <div>
               <Fighter fighter={fighter} key={fighter.name} />
-              <Link href={{
+              
+                <button className={styles.button_display}>
+                <Link href={{
                 pathname: '/fight/[id]',
                 query: { id: fighter.id }
-              }}>
-                <button className={styles.button_display}>Click me</button>
-              </Link>
+              }}>   Select Fighter   </Link>
+                </button>
+        
             </div>
 
           )

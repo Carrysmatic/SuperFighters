@@ -25,8 +25,6 @@ export default function Fight() {
     )
   );
   const [opponentFighter, setOpponentFighter] = useState(getRandomFighter());
-
-
   
   const XstartFight = useCallback(() => {
     setFightInProgress(true);
@@ -86,11 +84,11 @@ export default function Fight() {
         <p>Fight zone</p>
       </div>
       <Fighter fighter={opponentFighter} />
-      <button onClick={XstartFight}> Start Fight</button>
+      <button onClick={XstartFight} className={styles.button}> Start Fight</button>
       <Fighter fighter={selectedFighter} />
       {/* 
 
-// attackCooldown - WIP
+// attackCooldown - done not really ? 
 // Make it look  better - WIP
 // /winner page creating - WIP /  congratz fighter won  
 // Add a button to go back to the home page - WIP 

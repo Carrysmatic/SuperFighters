@@ -13,8 +13,9 @@ export function Fighter(props: FighterProps) {
 
   return (
 
-    <div className={styles.fighter}>
-      <div>Character name:{fighter.name}</div>
+    <div className={styles.fighterBox}>
+      <div>{fighter.name}</div>
+      <img src={fighter.imageUrl} alt={fighter.name} className={styles.imageUrl}/>
       <div className={styles.healthBar}>Health {fighter.health}</div>
       <div className={styles.block} style={{
         width: fighter.health,
@@ -22,7 +23,7 @@ export function Fighter(props: FighterProps) {
       <div>Attack {fighter.attack}</div>
       <div>Defense {fighter.defense}</div>
       <div>Speed {fighter.attackSpeed}</div>
-      <img src={fighter.imageUrl} alt={fighter.name} />
+     
     </div>
 
   );

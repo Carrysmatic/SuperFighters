@@ -13,12 +13,12 @@ export default function Home() {
 
 
 
-    <div className={styles.container}>
+    <div className={styles.container}> 
 
       <div className={styles.title}>
         <p>Super Fighters</p>
       </div>
-      <div className={styles.grid}>
+      <div className={styles.fighterGrid}>
         {fighters.map((fighter) => {
           return (
             <div>

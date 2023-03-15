@@ -23,7 +23,7 @@ export default function Home() {
           return (
             <div>
               <Fighter fighter={fighter} key={fighter.name} />
-              
+                
                 <button className={styles.button_display}>
                 <Link href={{
                 pathname: '/fight/[id]',

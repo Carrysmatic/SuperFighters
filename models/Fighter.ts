@@ -1,3 +1,6 @@
+import { File } from "buffer";
+import { ImageLoader } from "next/image";
+
 export interface FighterShape {
   name: string;
   id: string;
@@ -22,8 +25,8 @@ export const Archer: FighterShape = {
 
 export const Knight: FighterShape = {
     name: 'Knight',
-    id: 'knight',
-    imageUrl: 'https://img.freepik.com/premium-vector/knight-warrior-armor_9645-221.jpg?w=2000',
+    id: './images/knight.png',
+    imageUrl: '',
     health: 150,
     attack: 7,
     defense: 10,

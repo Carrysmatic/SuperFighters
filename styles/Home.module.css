@@ -6,6 +6,7 @@
   min-height: 100vh;
   padding: 0 0.5rem;
   background: #0070f3;
+  
 }
 
 .title {
@@ -21,6 +22,7 @@
   grid-gap: 2rem;
   max-width: 800px;
   margin-top: 3rem;
+  
 }
 
 .fighterBox {
@@ -34,13 +36,24 @@
   border-radius: 1rem;
   background: #fafafa;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  font-weight: 800;
+  border: 1px solid red;
+  border-radius: 30px;
 }
 
 .imageUrl {
   width: 200px;
-height: 200px;
-  object-fit: contain;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+
 }
+/* 
+.stats {
+  display:flex;
+  justify-content: space-between;
+  align-content: center;
+} */
 
 .fighterName {
   margin: 0;
@@ -59,21 +72,17 @@ height: 200px;
   font-size: 1rem;
 }
 
-.button {
-  display: flex;
+.button { 
   justify-content: center;
-  align-items: center;;
+  align-items: center;
   height: 3rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 16px auto;
   padding: 0 1rem;
-  border: 0;
-  border-radius: 0.25rem;
-  background: #fafafa;
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  background-color: #fafafa;
   font-size: 1rem;
   font-weight: 600;
   transition: filter 0.2s;
+
 }
 .block{
   display: flex;
@@ -96,4 +105,19 @@ height: 200px;
   font-size: 1rem;
   font-weight: 600;
   transition: filter 0.2s;
+}
+
+.flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+
+}
+
+.fighterArena {
+  display:flex;
+  justify-content:space-between;
+  gap: 2rem;
+  margin-top: 3rem;
+  align-items: center;
 }

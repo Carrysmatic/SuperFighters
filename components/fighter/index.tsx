@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Archer, FighterShape} from "../../models/Fighter";
+import { Archer, FighterShape } from "../../models/Fighter";
 import styles from "../../styles/Home.module.css";
 import { useRouter } from "next/router";
 
@@ -15,16 +15,25 @@ export function Fighter(props: FighterProps) {
 
     <div className={styles.fighterBox}>
       <div>{fighter.name}</div>
-      <img src={fighter.imageUrl} alt={fighter.name} className={styles.imageUrl}/>
+      <img src={fighter.imageUrl} alt={fighter.name} className={styles.imageUrl} />
       <div className={styles.healthBar}>Health {fighter.health}</div>
-      <div className={styles.block} style={{
+      <div className={styles.stats}>
+        <div className={styles.block} style={{
         width: fighter.health,
       }}></div>
-      <div>Attack {fighter.attack}</div>
-      <div>Defense {fighter.defense}</div>
-      <div>Speed {fighter.attackSpeed}</div>
-      <div>{fighter.attackCooldown}</div>
-     
+         <div className={styles.flexSpaceBetween}> 
+          <div>Attack</div>
+           <div>{fighter.attack}</div>
+           </div>
+           <div className={styles.flexSpaceBetween}> 
+          <div>Defense</div>
+           <div>{fighter.defense}</div>
+           </div>
+           <div className={styles.flexSpaceBetween}> 
+          <div>Speed</div>
+           <div>{fighter.attackSpeed}</div>
+           </div>
+      </div>
     </div>
 
   );

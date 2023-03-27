@@ -5,13 +5,17 @@ import Link from "next/link";
 import { Fighter } from "../components/fighter";
 
 
+//Some things before we can say this is done:
+//- back button on winner page - done
+//- fix style on winner page -done
+//- change winner winner chicken dinner to something nicer - done
+//- Add a combat log (???)
+//- Look into some animations, decide on what you want first like a brr.  - HTF 
 
 export default function Home() {
 
 
   return (
-
-
 
     <div className={styles.container}> 
 

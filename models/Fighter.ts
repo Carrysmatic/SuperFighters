@@ -26,7 +26,7 @@ export const Archer: FighterShape = {
 export const Knight: FighterShape = {
     name: 'Knight',
     id: 'knight',
-    imageUrl: './images/knight.png',
+    imageUrl: '/knight1.jpg',
     health: 150,
     attack: 7,
     defense: 10,

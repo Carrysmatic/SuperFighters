@@ -37,7 +37,6 @@
   background: #fafafa;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
   font-weight: 800;
-  border: 1px solid red;
   border-radius: 30px;
 }
 
@@ -120,4 +119,24 @@
   gap: 2rem;
   margin-top: 3rem;
   align-items: center;
+}
+
+
+.fighterBox1 {
+  display: flex;
+  max-width: 500px;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+  padding: 1rem;
+  gap: 8px;
+  border-radius: 1rem;
+  background: #fafafa;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  font-weight: 800;
+  border-radius: 30px;
+}
+
+.slide {
+	        animation: slide 3s cubic-bezier(0.445, 0.050, 0.550, 0.950) 1s infinite both;
 }

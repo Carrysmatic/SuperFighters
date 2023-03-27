@@ -12,15 +12,22 @@ export function FighterFight(props: FighterProps) {
 
 
   return (
-
+    <div className={styles.slide}>
     <div className={styles.fighterBox}>
+
+
       <div>{fighter.name}</div>
+
       <img src={fighter.imageUrl} alt={fighter.name} className={styles.imageUrl} />
+
       <div className={styles.healthBar}>Health {fighter.health}</div>
       <div className={styles.stats}>
         <div className={styles.block} style={{
         width: fighter.health,
-      }}></div>
+      }}>
+        
+      </div>
+      </div>
       </div>
     </div>
 

@@ -19,7 +19,7 @@ const calculateDamage = (attacker: FighterShape, defender: FighterShape) => {
 // as 10 = 1 tick / as 1 = 10 ticks / as 0.5 =20 ticks
 
 const attackCooldown = (fighter: FighterShape) => {
-  const attackCooldown = 1 / fighter.attackSpeed * 10;
+  const attackCooldown = 1 / fighter.attackSpeed * 3;
   return ({
     ...fighter,
     attackCooldown: attackCooldown,
@@ -103,15 +103,15 @@ export default function Fight() {
     }, 100);
   }, [tick]);
 
-function decreseCooldown(fighter: FighterShape) {
-  if (fighter.attackCooldown > 0) {
-    return {
-      ...fighter,
-      attackCooldown: fighter.attackCooldown - 1,
+  function decreseCooldown(fighter: FighterShape) {
+    if (fighter.attackCooldown > 0) {
+      return {
+        ...fighter,
+        attackCooldown: fighter.attackCooldown - 1,
+      }
     }
+    return fighter;
   }
-  return fighter;
-}
 
   return (
     <div className={styles.container}>
@@ -119,10 +119,10 @@ function decreseCooldown(fighter: FighterShape) {
         <p>Fight zone</p>
       </div>
       <div className={styles.fighterArena}>
-      <FighterFight fighter={opponentFighter} />
-      <br/>
-      {!fightInProgress && <button onClick={XstartFight} className={styles.button}> Start Fight</button>}
-      <FighterFight fighter={selectedFighter} />
+        <FighterFight fighter={opponentFighter} />
+        <br />
+        {!fightInProgress && <button onClick={XstartFight} className={styles.button}> Start Fight</button>}
+        <FighterFight fighter={selectedFighter} />
       </div>
       {/* 
 
